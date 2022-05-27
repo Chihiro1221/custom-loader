@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyRightPlugin = require('./plugins/copyright-plugin');
 const path = require('path');
 module.exports = {
   mode: 'production',
@@ -51,6 +52,9 @@ module.exports = {
       scriptLoading: 'blocking',
       removeComments: true, //移除HTML中的注释
       collapseWhitespace: true, //删除空白符与换行符
+    }),
+    new CopyRightPlugin({
+      name: 'monday',
     }),
   ],
 };
