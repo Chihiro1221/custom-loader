@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@babel/core': 7.12.3
   babel-loader: ^8.2.5
+  highlight: ^0.2.4
   html-webpack-plugin: ^5.5.0
   marked: ^4.0.16
   ts-loader: ^9.3.0
@@ -13,6 +14,7 @@ specifiers:
 dependencies:
   '@babel/core': 7.12.3
   babel-loader: 8.2.5_edm2y7fpvdf7n7w7mamarcqqzu
+  highlight: 0.2.4
   html-webpack-plugin: 5.5.0_webpack@5.72.1
   marked: 4.0.16
   ts-loader: 9.3.0_d3ofjbjbkerjqvgldod72xzm2y
@@ -836,6 +838,11 @@ packages:
   /he/1.2.0:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
+    dev: false
+
+  /highlight/0.2.4:
+    resolution: {integrity: sha512-TEcWU6BolpDYIaVD91KmaYe/kRZwOmQlLWZGO8DK+Cs555+7mawk2KUnF/dBwcLnrvlCDk/xC+BXfz7Zva+Jfg==}
+    deprecated: Not maintained anymore
     dev: false
 
   /html-minifier-terser/6.1.0:

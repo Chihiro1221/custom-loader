@@ -7,6 +7,9 @@ module.exports = {
     filename: 'bundle.js',
     path: path.join(__dirname, 'dist'),
   },
+  resolveLoader: {
+    modules: ['node_modules', './loaders'],
+  },
   // loader
   module: {
     rules: [
@@ -26,7 +29,16 @@ module.exports = {
       },
       {
         test: /.md$/,
-        use: ['./markdown-loader.js'],
+        use: ['markdown-loader'],
+      },
+      {
+        test: /.ts$/,
+        use: [
+          {
+            loader: 'replace-loader',
+            options: { name: 'mondaylab' },
+          },
+        ],
       },
     ],
   },
